@@ -2,7 +2,7 @@
 import { use } from "react";
 import { useState } from "react";
 // import Nav from "@/components/Navbar/Nav";
-// import { useCart } from "@/components/Cart/CartContext";
+
 import Image from "next/image";
 import MainNav from "../../../../components/layout/Navbar/MainNavbar"
 import Footer from "../../../../components/layout/Footer"
@@ -10,12 +10,13 @@ import TransButton from "../../../../components/ui/TransButton";
 import Review from "../../../../components/Review"
 import {skinProducts} from "../../../../data/products/skin"
 
+import {useCart} from "../../../../context/CartContext"
 
 
 export default function Page({ params }) {
     const { id } = use(params);
 
-    // const { addToCart } = useCart();
+    const { addToCart } = useCart();
 
 
     const product = skinProducts.find(

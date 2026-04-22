@@ -3,24 +3,25 @@ import React, { useRef, useEffect, useState } from "react";
 
 import Link from "next/link";
 // import Nav from './Nav'
-// import CartSideBar from '../Cart/CartSideBar';
-// import Search from '../ProductSearch/Search';
-// import { useSearch } from '../ProductSearch/SearchContext';
-// import SideBar from './SideBar';
+
+import { useSearch } from "@/context/SearchContext";
+import Search from "@/components/search/Search";
+
+import SideBar from "@/components/cart/Sidebar";
 
 export const MainNavbar = () => {
   const [open, setOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
-  // const { searchItem, setSearchItem } = useSearch();
-  // const [sidebar, setSidebar] = useState(false);
+  const { searchItem, setSearchItem } = useSearch();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const inputRef = useRef(null);
 
-  // useEffect(() => {
-  //     if (open && inputRef.current) {
-  //         inputRef.current.focus();
-  //     }
-  // }, [open]);
+  useEffect(() => {
+    if (open && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [open]);
 
   return (
     <>
@@ -32,9 +33,12 @@ export const MainNavbar = () => {
               <i className="fa-solid fa-dollar-sign"></i>
             </div>
 
-            {/* <button onClick={() => setSidebar(true)} className='ml-2 sm:hidden'> */}
-            <i className="fa-solid fa-bars"></i>
-            {/* </button> */}
+            <button
+              onClick={() => setIsSidebarOpen(true)}
+              className="ml-2 sm:hidden"
+            >
+              <i className="fa-solid fa-bars"></i>
+            </button>
 
             <h1 className="headFont whitespace-nowrap sm:text-2xl lg:text-3xl ml-10 sm:ml-25 lg:ml-50 cursor-pointer ">
               <Link href="/">
@@ -131,8 +135,8 @@ export const MainNavbar = () => {
               <input
                 ref={inputRef}
                 type="text"
-                // value={searchItem}
-                // onChange={(e) => setSearchItem(e.target.value)}
+                value={searchItem}
+                onChange={(e) => setSearchItem(e.target.value)}
                 className=" w-[220px] sm:w-[330px] md:w-[450px] lg:w-[600px] xl:w-[900px] h-[42px] border border-black rounded-md pl-10 pr-4 text-base sm:text-lg outline-none"
                 placeholder="Search..."
               />
@@ -143,12 +147,14 @@ export const MainNavbar = () => {
             </button>
           </div>
 
-          <div className="w-full mt-10 px-10">{/* <Search /> */}</div>
+          <div className="w-full mt-10 px-10">
+            <Search />
+          </div>
         </div>
       )}
 
       {/* Cart Side Bar */}
-      {/* {isCartOpen && <CartSideBar onClose={() => setIsCartOpen(false)} />} */}
+      {isCartOpen && <SideBar onClose={() => setIsCartOpen(false)} />}
 
       {/* Side NavBar for cellphones */}
       {/* {sidebar && <SideBar isOpen={sidebar} onClose={() => setSidebar(false)} />} */}
