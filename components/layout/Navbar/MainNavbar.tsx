@@ -1,13 +1,11 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
-
 import Link from "next/link";
-// import Nav from './Nav'
-
 import { useSearch } from "@/context/SearchContext";
 import Search from "@/components/search/Search";
-
 import SideBar from "@/components/cart/Sidebar";
+import NavSidebar from "./NavSidebar";
+import Nav from "./Nav";
 
 export const MainNavbar = () => {
   const [open, setOpen] = useState(false);
@@ -126,7 +124,7 @@ export const MainNavbar = () => {
 
       {open && (
         <div className="fixed top-0 left-0 w-full min-h-screen bg-white z-40 flex flex-col items-center overflow-y-auto pb-10">
-          {/* <Nav /> */}
+          <Nav />
 
           <div className="flex justify-center items-center gap-4 sm:gap-8 md:gap-10 mt-40">
             <div className="relative">
@@ -157,7 +155,13 @@ export const MainNavbar = () => {
       {isCartOpen && <SideBar onClose={() => setIsCartOpen(false)} />}
 
       {/* Side NavBar for cellphones */}
-      {/* {sidebar && <SideBar isOpen={sidebar} onClose={() => setSidebar(false)} />} */}
+
+      {isSidebarOpen && (
+        <NavSidebar
+          isOpen={isSidebarOpen}
+          onClose={() => setIsSidebarOpen(false)}
+        />
+      )}
     </>
   );
 };

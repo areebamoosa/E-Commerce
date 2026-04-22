@@ -1,18 +1,18 @@
 import Image from "next/image";
 
-// import Nav from '../Navbar/Nav'
-// import img from '../../assets/Discover.jpeg'
-// import Footer from '.././Footer/Footer'
 
-import MainNavbar from "../../components/layout/Navbar/MainNavbar";
+
+
 import Footer from "../../components/layout/Footer";
+import Nav from "../../components/layout/Navbar/Nav";
+
 
 export const Discover = () => {
   return (
     <>
-      {/* <Nav /> */}
+      <Nav />
 
-      <MainNavbar />
+
 
       <div className="relative w-full h-[250px] mt-[80px] sm:mt-[100px] sm:h-[500px] overflow-hidden">
         <Image

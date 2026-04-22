@@ -11,20 +11,20 @@ const Category = () => {
     { img: "/pd9h.webp", label: "SKIN" },
   ];
 
-  const getVisibleCount = () => (window.innerWidth < 640 ? 1 : 3);
-
-  const [visibleCount, setVisibleCount] = useState(getVisibleCount());
+  const [visibleCount, setVisibleCount] = useState(3);
   const [startIndex, setStartIndex] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
-      const newCount = getVisibleCount();
-      setVisibleCount(newCount);
+      const count = window.innerWidth < 640 ? 1 : 3;
+      setVisibleCount(count);
 
-      if (startIndex + newCount > categories.length) {
+      if (startIndex + count > categories.length) {
         setStartIndex(0);
       }
     };
+
+    handleResize(); // run on mount
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);

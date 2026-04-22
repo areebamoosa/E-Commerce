@@ -8,7 +8,7 @@ export default function LoginForm() {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="flex flex-col justify-center items-center mt-60 sm:mt-75 lg:mt-60">
+    <div className="flex flex-col justify-center items-center mt-60 sm:mt-75 lg:mt-40">
       <h1 className="headFont dark-pink text-2xl sm:text-3xl">LOGIN</h1>
 
       <input

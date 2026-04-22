@@ -1,11 +1,9 @@
 import React from "react";
-// import Nav from "../Navbar/Nav";
-// import FaqCard from "./FaqCard";
-// import Footer from "../Footer/Footer";
+
 
 import FaqCard from "../../components/FaqCard";
 import Footer from "../../components/layout/Footer";
-import MainNavbar from "../../components/layout/Navbar/MainNavbar";
+import Nav from "../../components/layout/Navbar/Nav";
 
 const faqs = [
   {
@@ -62,9 +60,9 @@ const faqs = [
 const AboutUs = () => {
   return (
     <>
-      {/* <Nav /> */}
+      <Nav />
 
-      <MainNavbar />
+      {/* <MainNavbar /> */}
 
       <div className="flex flex-col justify-center items-center mt-4 pt-[100px] bg-white">
         <div className="mt-[-15px] sm:mt-10">

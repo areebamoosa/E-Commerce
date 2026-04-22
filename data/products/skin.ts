@@ -4,9 +4,9 @@ export const skinProducts = [
       title: "Her's Skin Serum",
       price: 36,
       desc: "Hydrating Glow Serum",
-      Img: "/skin/pd9.webp",
-      hoverImg: "/skin/pd9h.webp",
-      smallImgs: ["/skin/pd9h.webp", "/skin/pd9.webp"],
+      Img: "/pd9.webp",
+      hoverImg: "/pd9h.webp",
+      smallImgs: ["/pd9h.webp", "/pd9.webp"],
       category: "skin"
     },
     {
@@ -14,9 +14,9 @@ export const skinProducts = [
       title: "Her's Skin Serum",
       price: 56,
       desc: "Hydrating Glow Serum",
-      Img: "/skin/pd10.webp",
-      hoverImg: "/skin/pd10h.webp",
-      smallImgs: ["/skin/pd10h.webp", "/skin/pd10.webp"],
+      Img: "/pd10.webp",
+      hoverImg: "/pd10h.webp",
+      smallImgs: ["/pd10h.webp", "/pd10.webp"],
       category: "skin"
     },
     {
@@ -24,9 +24,9 @@ export const skinProducts = [
       title: "Her's Skin Serum",
       price: 86,
       desc: "Hydrating Glow Serum",
-      Img: "/skin/pd11.webp",
-      hoverImg: "/skin/pd11h.webp",
-      smallImgs: ["/skin/pd11.webp", "/skin/pd11h.webp"],
+      Img: "/pd11.webp",
+      hoverImg: "/pd11h.webp",
+      smallImgs: ["/pd11.webp", "/pd11h.webp"],
       category: "skin"
     },
     {
@@ -34,9 +34,9 @@ export const skinProducts = [
       title: "Her's Skin Serum",
       price: 36,
       desc: "Hydrating Glow Serum",
-      Img: "/skin/pd12.webp",
-      hoverImg: "/skin/pd12h.webp",
-      smallImgs: ["/skin/pd12.webp", "/skin/pd12h.webp"],
+      Img: "/pd12.webp",
+      hoverImg: "/pd12h.webp",
+      smallImgs: ["/pd12.webp", "/pd12h.webp"],
       category: "skin"
     },
     {
@@ -44,9 +44,9 @@ export const skinProducts = [
       title: "Her's Skin Serum",
       price: 36,
       desc: "Hydrating Glow Serum",
-      Img: "/skin/pd1.webp",
-      hoverImg: "/skin/pdh1.webp",
-      smallImgs: ["/skin/pdh1.webp", "/skin/pd1.webp"],
+      Img: "/pd1.webp",
+      hoverImg: "/pdh1.webp",
+      smallImgs: ["/pdh1.webp", "/pd1.webp"],
       category: "skin"
     },
     {
@@ -54,9 +54,9 @@ export const skinProducts = [
       title: "Her's Skin Serum",
       price: 36,
       desc: "Hydrating Glow Serum",
-      Img: "/skin/pd2.webp",
-      hoverImg: "/skin/pdh2.webp",
-      smallImgs: ["/skin/pdh2.webp", "/skin/pd2.webp"],
+      Img: "/pd2.webp",
+      hoverImg: "/pdh2.webp",
+      smallImgs: ["/pdh2.webp", "/pd2.webp"],
       category: "skin"
     },
     {
@@ -64,13 +64,13 @@ export const skinProducts = [
       title: "Her's Skin Serum",
       price: 36,
       desc: "Hydrating Glow Serum",
-      Img: "/skin/pd5.webp",
-      hoverImg: "/skin/pd5h.webp",
+      Img: "/pd5.webp",
+      hoverImg: "/pd5h.webp",
       smallImgs: [
-        "/skin/pd5s-1.webp",
-        "/skin/pd5s-2.webp",
-        "/skin/pd5s-3.webp",
-        "/skin/pd5s-4.webp"
+        "/pd5s-1.webp",
+        "/pd5s-2.webp",
+        "/pd5s-3.webp",
+        "/pd5s-4.webp"
       ],
       category: "skin"
     },
@@ -79,12 +79,12 @@ export const skinProducts = [
       title: "Her's Skin Serum",
       price: 36,
       desc: "Hydrating Glow Serum",
-      Img: "/skin/pd4.webp",
-      hoverImg: "/skin/pd4h.webp",
+      Img: "/pd4.webp",
+      hoverImg: "/pd4h.webp",
       smallImgs: [
-        "/skin/pd4.webp",
-        "/skin/pd4h.webp",
-        "/skin/pd4s-1.webp"
+        "/pd4.webp",
+        "/pd4h.webp",
+        "/pd4s-1.webp"
       ],
       category: "skin"
     }

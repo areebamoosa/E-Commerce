@@ -1,15 +1,13 @@
+'use client'
+
 import React from 'react'
 
 
 import ProductGrid from '../../../components/product/ProductGrid'
-import {skinProducts} from "../../../data/products/skin"
+import { skinProducts } from "../../../data/products/skin"
 
 // import NavSwitcher from '../Navbar/NavSwitcher'
 
-// import main9 from '../../assets/pd9.webp'
-// import hov9 from '../../assets/pd9h.webp'
-// import hov11 from '../../assets/pd11h.webp'
-// import hov12 from '../../assets/pd12h.webp'
 
 
 import Footer from "../../../components/layout/Footer"
@@ -26,7 +24,7 @@ const Page = () => {
         <>
             {/* <NavSwitcher /> */}
 
-            <MainNav/>
+            <MainNav />
 
             <div className='relative w-full h-[250px] sm:h-[550px] overflow-hidden'>
 
@@ -42,24 +40,24 @@ const Page = () => {
 
             {/* Small Images Row of Cosmetics Categories */}
 
-            {/* <div className='flex sm:gap-5 gap-5 justify-start items-start m-8 mt-10 sm:m-10 lg:ml-15'>
+            <div className='flex sm:gap-5 gap-5 justify-start items-start m-8 mt-10 sm:m-10 lg:ml-15'>
                 <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
-                    <img src={main9} alt="eyes" className='w-full h-full object-cover rounded-md' />
+                    <Image src="/pd9.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base whitespace-nowrap'>skin concerns</p>
                 </div>
                 <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
-                    <img src={hov9} alt="eyes" className='w-full h-full object-cover rounded-md' />
+                    <Image src="/pd9h.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>face</p>
                 </div>
                 <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
-                    <img src={hov11} alt="eyes" className='w-full h-full object-cover rounded-md' />
+                    <Image src="/pd11h.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>body</p>
                 </div>
                 <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
-                    <img src={hov12} alt="eyes" className='w-full h-full object-cover rounded-md' />
+                    <Image src="/pd12h.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>lips</p>
                 </div>
-            </div> */}
+            </div>
 
             {/* Total Products + categorical buttons */}
 
@@ -82,12 +80,6 @@ const Page = () => {
             <div className='mt-30 flex justify-center items-center'>
                 <TransButton text={"load more"} />
             </div>
-
-
-
-
-
-
 
             <Footer />
         </>
