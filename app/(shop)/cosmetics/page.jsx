@@ -1,12 +1,8 @@
-
-
 import Image from "next/image";
-
 import Footer from "../../../components/layout/Footer"
 import ProductGrid from "../../../components/product/ProductGrid"
 import { cosmeticsProducts } from "../../../data/products/cosmetics"
 import TransButton from "../../../components/ui/TransButton";
-
 import NavSwitcher from "../../../components/layout/Navbar/NavSwitcher"
 
 export default function CosmeticsPage() {
@@ -16,7 +12,8 @@ export default function CosmeticsPage() {
             <NavSwitcher/>
 
             <div className='relative w-full h-[250px] sm:h-[550px] overflow-hidden'>
-                <Image src="/Red.jpeg" alt="red" fill className="w-full h-full object-cover" />
+                <Image src="/Red.jpeg" alt="red"  className="w-full h-full object-cover" priority   width={400} height={500} 
+                />
 
                 <div className="absolute sm:bottom-[40px] sm:left-[7%]  left-[3%] bottom-[20px]">
                     <h1 className='text-sm sm:text-xl font-extrabold text-white'>HER COSMETICS</h1>
