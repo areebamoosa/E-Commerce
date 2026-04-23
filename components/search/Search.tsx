@@ -1,4 +1,5 @@
 "use client";
+import { useMemo } from "react";
 
 import { useSearch } from "../../context/SearchContext";
 
@@ -12,7 +13,9 @@ import Link from "next/link";
 const Search = () => {
   const { searchItem } = useSearch();
 
-  const filtered = searchProducts(searchItem);
+  const filtered = useMemo (()=>{
+    return searchProducts(searchItem);
+  }, [searchItem])
 
   if (!searchItem.trim()) return null;
 

@@ -2,10 +2,20 @@
 import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import { useSearch } from "@/context/SearchContext";
-import Search from "@/components/search/Search";
-import SideBar from "@/components/cart/Sidebar";
+
+
 import NavSidebar from "./NavSidebar";
 import Nav from "./Nav";
+
+import dynamic from "next/dynamic";
+
+const SideBar = dynamic(() => import("@/components/cart/Sidebar"), {
+  ssr: false,
+});
+
+const Search = dynamic(() => import("@/components/search/Search"), {
+  ssr: false,
+});
 
 export const MainNavbar = () => {
   const [open, setOpen] = useState(false);
