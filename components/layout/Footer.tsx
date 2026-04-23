@@ -1,4 +1,4 @@
-"use client";
+
 import TransButton from "../ui/TransButton";
 
 const Footer = ({ variant = "light" }) => {

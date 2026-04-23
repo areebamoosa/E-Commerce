@@ -14,7 +14,7 @@ const SideBar = ({ onClose }) => {
   return (
     <>
       <div className="fixed top-0 right-0 h-full w-[400px] sm:w-[600px] bg-white shadow-2xl transform translate-x-0 transition-transform duration-500 z-50 p-10  ">
-        <div className="flex flex-col h-full overflow-y-auto">
+        <div className="flex flex-col h-full overflow-y-scroll">
           <div className="flex justify-between items-center">
             <span className="text-xl font-semibold">cart</span>
             <button className="cursor-pointer" onClick={onClose}>
@@ -187,21 +187,9 @@ const SideBar = ({ onClose }) => {
                 1 free mini deluxe sample with any $40+ order
               </span>
               <p className="grey text-sm sm:text-md mt-5">
-                choose free samples (1 remaining)
+                choose free samples 
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 justify-center items-center mt-5">
-                <div className="border border-col w-35 h-35 flex flex-col justify-center items-center rounded-md">
-                  <div className="w-25 h-25">
-                    <Image
-                      src="/free1.avif"
-                      alt="free1"
-                      className="w-full h-full object-cover"
-                      width={40}
-                      height={40}
-                    />
-                  </div>
-                  <p className="text-sm font-semibold mt-2">rose bloom lip</p>
-                </div>
                 <div className="border border-col w-35 h-35 flex flex-col justify-center items-center rounded-md">
                   <div className="w-25 h-25">
                     <Image

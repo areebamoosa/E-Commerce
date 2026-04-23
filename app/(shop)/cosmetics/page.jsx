@@ -1,7 +1,7 @@
-// import NavSwitcher from "@/app/components/Navbar/NavSwitcher";
+
 
 import Image from "next/image";
-import MainNav from "../../../components/layout/Navbar/MainNavbar"
+
 import Footer from "../../../components/layout/Footer"
 import ProductGrid from "../../../components/product/ProductGrid"
 import { cosmeticsProducts } from "../../../data/products/cosmetics"
@@ -12,7 +12,7 @@ import NavSwitcher from "../../../components/layout/Navbar/NavSwitcher"
 export default function CosmeticsPage() {
     return (
         <>
-            {/* <MainNav /> */}
+
             <NavSwitcher/>
 
             <div className='relative w-full h-[250px] sm:h-[550px] overflow-hidden'>

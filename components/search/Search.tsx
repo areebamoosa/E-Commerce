@@ -3,7 +3,7 @@
 import { useSearch } from "../../context/SearchContext";
 
 import { searchProducts } from "@/lib/searchProducts";
-// import { imageOptimizer } from "next/dist/server/image-optimizer";
+
 
 import ProductCard from "../product/ProductCard";
 

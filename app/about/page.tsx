@@ -1,4 +1,4 @@
-import React from "react";
+
 
 
 import FaqCard from "../../components/FaqCard";
@@ -62,7 +62,7 @@ const AboutUs = () => {
     <>
       <Nav />
 
-      {/* <MainNavbar /> */}
+
 
       <div className="flex flex-col justify-center items-center mt-4 pt-[100px] bg-white">
         <div className="mt-[-15px] sm:mt-10">
