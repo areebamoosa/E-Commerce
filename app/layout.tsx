@@ -3,6 +3,8 @@ import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
 import { SearchProvider } from "@/context/SearchContext";
 import Transition from "@/components/Transition/Transition";
+import { ToastProvider } from "@/context/ToastContext";
+import Toast from "@/components/ui/Toast";
 
 export const metadata: Metadata = {
   title: "HER-Cosmetics",
@@ -39,7 +41,11 @@ export default function RootLayout({
         <SearchProvider>
           <CartProvider>
             <Transition />
+            <ToastProvider>
+
             {children}
+            <Toast/>
+            </ToastProvider>
           </CartProvider>
         </SearchProvider>
       </body>

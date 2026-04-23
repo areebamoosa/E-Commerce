@@ -4,7 +4,10 @@ import Link from "next/link";
 import NavSidebar from "./NavSidebar";
 import { useSearch } from "@/context/SearchContext";
 
+
 import dynamic from "next/dynamic";
+
+
 
 const SideBar = dynamic(() => import("@/components/cart/Sidebar"), {
   ssr: false,
