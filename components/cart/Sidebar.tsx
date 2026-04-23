@@ -1,6 +1,6 @@
 "use client";
 
-import { useCart } from "@/context/CartContext";
+import { useCart } from "@/hooks/useCart";
 
 import Link from "next/link";
 import Image from "next/image";

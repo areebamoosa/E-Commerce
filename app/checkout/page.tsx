@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import Nav from "@/components/layout/Navbar/Nav";
-import { useCart } from "@/context/CartContext";
+import { useCart } from "@/hooks/useCart";
 import SideBar from "@/components/cart/Sidebar";
 
 const CheckoutPage = () => {

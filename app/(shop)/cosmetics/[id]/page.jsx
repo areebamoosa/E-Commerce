@@ -1,11 +1,12 @@
 'use client'
 import { use } from "react";
 import { useState } from "react";
-// import Nav from "@/components/Navbar/Nav";
-import {useCart} from "../../../../context/CartContext"
+
+import Nav from "../../../../components/layout/Navbar/Nav";
+import {useCart} from "../../../../hooks/useCart"
 
 import Image from "next/image";
-import MainNav from "../../../../components/layout/Navbar/MainNavbar"
+
 import Footer from "../../../../components/layout/Footer"
 import TransButton from "../../../../components/ui/TransButton";
 import Review from "../../../../components/Review"
@@ -33,9 +34,9 @@ export default function Page({ params }) {
 
     return (
         <>
-            {/* <Nav /> */}
+            <Nav />
 
-            <MainNav />
+
 
             <div className="flex flex-col lg:flex-row justify-center items-center max-w-[1400px] w-full mx-auto h-auto lg:h-[800px] gap-3 sm:gap-10 pt-[100px] sm:pt-[130px] lg:pt-[250px] px-4">
 

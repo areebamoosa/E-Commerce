@@ -2,7 +2,7 @@
 import { use } from "react";
 import { useState } from "react";
 // import Nav from "@/components/Navbar/Nav";
-import {useCart} from "../../../../context/CartContext"
+import {useCart} from "../../../../hooks/useCart"
 import Image from "next/image";
 import MainNav from "../../../../components/layout/Navbar/MainNavbar"
 import Footer from "../../../../components/layout/Footer"

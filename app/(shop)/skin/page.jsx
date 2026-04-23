@@ -1,30 +1,22 @@
-'use client'
+
 
 import React from 'react'
-
-
 import ProductGrid from '../../../components/product/ProductGrid'
 import { skinProducts } from "../../../data/products/skin"
-
-// import NavSwitcher from '../Navbar/NavSwitcher'
-
-
-
+import NavSwitcher from "../../../components/layout/Navbar/NavSwitcher"
 import Footer from "../../../components/layout/Footer"
-import MainNav from "../../../components/layout/Navbar/MainNavbar"
 import TransButton from '../../../components/ui/TransButton'
-
-
-
-
 import Image from 'next/image'
+
 
 const Page = () => {
     return (
         <>
-            {/* <NavSwitcher /> */}
 
-            <MainNav />
+
+
+
+            <NavSwitcher />
 
             <div className='relative w-full h-[250px] sm:h-[550px] overflow-hidden'>
 
