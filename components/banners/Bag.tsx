@@ -15,6 +15,7 @@ export const Bag = () => {
               src="/Bag2.jpeg"
               alt="prod"
               fill
+              priority
               className="absolute inset-0 h-full w-full object-cover transition-opacity duration-200 hover:opacity-0"
             />
 
@@ -22,6 +23,7 @@ export const Bag = () => {
               src="/Bag1.jpeg"
               alt="hovImg"
               fill
+              
               className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-200 hover:opacity-100"
             />
           </div>

@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import ProductGrid from '../../../components/product/ProductGrid'
 import { skinProducts } from "../../../data/products/skin"
@@ -9,7 +7,9 @@ import TransButton from '../../../components/ui/TransButton'
 import Image from 'next/image'
 
 
-const Page = () => {
+export default async function Page() {
+
+    await new Promise((resolve) => setTimeout(resolve, 300))
     return (
         <>
 
@@ -21,8 +21,8 @@ const Page = () => {
             <div className='relative w-full h-[250px] sm:h-[550px] overflow-hidden'>
 
                 <Image src="/skin.png"
-                    alt="img" fill
-                    className='w-full h-full object-cover object-right' />
+                    alt="img"
+                    className='w-full h-full object-cover object-right' priority width={400} height={500} />
 
 
                 <div className="absolute sm:bottom-[40px] sm:left-[7%] left-[4%] bottom-[20px]">
@@ -78,4 +78,3 @@ const Page = () => {
     )
 }
 
-export default Page

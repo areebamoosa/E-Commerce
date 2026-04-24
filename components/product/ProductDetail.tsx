@@ -11,12 +11,19 @@ import Footer from "@/components/layout/Footer";
 import TransButton from "@/components/ui/TransButton";
 import Review from "@/components/Review";
 
+import { useToast } from "@/hooks/useToast";
+
 const ProductDetail = ({ product }) => {
   const { addToCart } = useCart();
+  const { addToast } = useToast();
 
   const { Img, title, smallImgs, hoverImg } = product;
-
   const [mainImg, setImg] = useState(Img);
+
+  const handleAddToCart = () => {
+    addToCart(product);
+    addToast("Added to cart 🛒", "success");
+  };
 
   return (
     <>
@@ -85,7 +92,7 @@ const ProductDetail = ({ product }) => {
 
           <div className="flex justify-center items-center mt-5">
             <TransButton
-              onClick={() => addToCart(product)}
+              onClick={handleAddToCart}
               text={"add to cart"}
               width="w-[600px]"
             />

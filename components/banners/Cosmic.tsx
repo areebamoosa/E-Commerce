@@ -9,7 +9,7 @@ export const Cosmic = () => {
       <div className=" relative  ">
         {/* Desktop Image */}
         <div className="hidden sm:flex justify-center items-center w-full h-[500px] object-cover">
-          <Image src="/frag.webp" alt="balm" fill className="object-cover" />
+          <Image src="/frag.webp" alt="balm" fill className="object-cover" priority />
         </div>
 
         {/* Mobile Image */}

@@ -4,9 +4,12 @@ import { useCart } from "@/hooks/useCart";
 
 import Link from "next/link";
 import Image from "next/image";
+import { useToast } from "@/hooks/useToast";
 
 const SideBar = ({ onClose }) => {
   const { cart, removeFromCart, addToCart, decreaseQuantity } = useCart();
+
+  const { addToast } = useToast();
 
   // Total price of all items in the cart
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
@@ -150,7 +153,13 @@ const SideBar = ({ onClose }) => {
                               </div>
                               <button
                                 className="underline grey cursor-pointer mr-1 sm:mr-3 mt-1 text-sm"
-                                onClick={() => removeFromCart(item.id)}
+                                onClick={() => {
+                                  removeFromCart(item.id);
+                                  addToast(
+                                    "Item removed from cart 🗑️",
+                                    "error"
+                                  );
+                                }}
                               >
                                 <i className="fa-solid fa-trash"></i> Remove
                               </button>
@@ -187,7 +196,7 @@ const SideBar = ({ onClose }) => {
                 1 free mini deluxe sample with any $40+ order
               </span>
               <p className="grey text-sm sm:text-md mt-5">
-                choose free samples 
+                choose free samples
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 justify-center items-center mt-5">
                 <div className="border border-col w-35 h-35 flex flex-col justify-center items-center rounded-md">

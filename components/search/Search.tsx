@@ -1,18 +1,27 @@
 "use client";
 
+import { useEffect, useMemo, useState } from "react";
 import { useSearch } from "../../context/SearchContext";
-
 import { searchProducts } from "@/lib/searchProducts";
-
-
 import ProductCard from "../product/ProductCard";
-
 import Link from "next/link";
 
 const Search = () => {
   const { searchItem } = useSearch();
 
-  const filtered = searchProducts(searchItem);
+  const [debouncedSearch, setDeouncedSearch] = useState(searchItem);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDeouncedSearch(searchItem);
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [searchItem]);
+
+  const filtered = useMemo(() => {
+    return searchProducts(debouncedSearch);
+  }, [debouncedSearch]);
 
   if (!searchItem.trim()) return null;
 

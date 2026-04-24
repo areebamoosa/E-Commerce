@@ -3,8 +3,12 @@ import ProductGrid from "../../../components/product/ProductGrid"
 import { fragranceProducts } from "../../../data/products/fragrance"
 import Footer from "../../../components/layout/Footer"
 import NavSwitcher from '../../../components/layout/Navbar/NavSwitcher'
+import { resolve } from 'path'
 
-const Page = () => {
+export default async function Page() {
+
+    await new Promise((resolve) => setTimeout(resolve, 300))
+
     return (
         <>
             <div className='min-h-screen bg-black'>
@@ -36,4 +40,3 @@ const Page = () => {
     )
 }
 
-export default Page

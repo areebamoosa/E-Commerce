@@ -5,8 +5,18 @@ import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 
-const ProductCard = ({ id, title, price, desc, Img, hoverImg, smallImgs, category }) => {
+const ProductCard = ({
+  id,
+  title,
+  price,
+  desc,
+  Img,
+  hoverImg,
+  smallImgs,
+  category,
+}) => {
   const [mainImg, setImg] = useState(Img);
+
   const router = useRouter();
 
   // Navigate to the detailed page when clicking anywhere on the product card except small images
@@ -28,7 +38,10 @@ const ProductCard = ({ id, title, price, desc, Img, hoverImg, smallImgs, categor
         className="relative lg:h-[460px] lg:w-[350px] sm:h-[350px] sm:w-[220px] h-[340px] w-[180px]  bg-white rounded-lg transition-all duration-500  group shadow-md "
         onClick={handleCardClick}
       >
-        <div className="relative lg:h-[340px] lg:w-[350px]  h-[220px] w-full rounded-t-lg  ">
+        <div
+
+          className="relative lg:h-[340px] lg:w-[350px]  h-[220px] w-full rounded-t-lg  "
+        >
           {/* Original Default Image */}
           <Image
             src={mainImg}
@@ -36,14 +49,13 @@ const ProductCard = ({ id, title, price, desc, Img, hoverImg, smallImgs, categor
             fill
             className="absolute h-full w-full object-cover rounded-t-lg transition-opacity duration-200 hover:opacity-0"
           />
-
           {/* Hover Image */}
 
           <Image
             src={hoverImg}
             alt="hovImg"
             fill
-            className="absolute top-0 left-0 h-full w-full object-cover rounded-t-lg opacity-0 transition-opacity duration-200 hover:opacity-100 "
+            className="object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
           />
         </div>
 
@@ -91,4 +103,4 @@ const ProductCard = ({ id, title, price, desc, Img, hoverImg, smallImgs, categor
   );
 };
 
-export default ProductCard;
+export default React.memo(ProductCard);

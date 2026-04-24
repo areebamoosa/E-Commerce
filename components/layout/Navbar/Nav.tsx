@@ -3,8 +3,19 @@ import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import NavSidebar from "./NavSidebar";
 import { useSearch } from "@/context/SearchContext";
-import Search from "@/components/search/Search";
-import SideBar from "@/components/cart/Sidebar";
+
+
+import dynamic from "next/dynamic";
+
+
+
+const SideBar = dynamic(() => import("@/components/cart/Sidebar"), {
+  ssr: false,
+});
+
+const Search = dynamic(() => import("@/components/search/Search"), {
+  ssr: false,
+});
 
 const Nav = () => {
   const [open, setOpen] = useState(false);

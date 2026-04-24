@@ -18,7 +18,9 @@ export const Discover = () => {
         <Image
           src="/Discover.jpeg"
           alt="img"
-          fill
+
+          priority
+          width={400} height={500}
           className="w-full h-full object-cover"
         />
 
