@@ -7,19 +7,20 @@ export const Lipsticks = () => {
   return (
     <>
       <div className="relative">
-        <div className="hidden sm:block w-full h-[500px] object-cover">
+        <div className="hidden sm:block w-full h-full object-cover">
           <Image
-            src="/lipsticks.webp"
+            src="/assets/lipsticks.webp"
             alt="prod"
-            fill
+            width={1920}
+            height={1080}
             className="w-full h-full object-cover"
           />
         </div>
 
-        <div className="flex justify-center items-center h-[500px]  w-full sm:hidden">
-          <div className="w-full max-w-[500px] aspect-square overflow-hidden">
+        <div className="flex justify-center items-center w-full sm:hidden">
+          <div className="relative w-full max-w-[500px] aspect-square overflow-hidden">
             <Image
-              src="/lipsticks.webp"
+              src="/assets/lipsticks.webp"
               alt="prod"
               fill
               className="w-full h-full object-cover object-[82%] "

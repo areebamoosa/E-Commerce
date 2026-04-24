@@ -36,7 +36,7 @@ const SideBar = ({ onClose }) => {
             <div className="flex rounded-lg p-5 light-pink justify-start items-start w-80 sm:w-130 h-35 gap-5">
               <div className="sm:w-25 sm:h-25  rounded-md">
                 <Image
-                  src="/cart.avif"
+                  src="/assets/cart.avif"
                   alt="cartImg"
                   width={40}
                   height={40}
@@ -69,7 +69,7 @@ const SideBar = ({ onClose }) => {
                       <div className="flex flex-col justify-center items-center w-40  border border-col rounded-md gap-2 ">
                         <div className="w-40  h-32 rounded-md ">
                           <Image
-                            src="/pd5.webp"
+                            src="/assets/pd5.webp"
                             alt="recommended product"
                             className="w-full h-full object-cover rounded-md"
                             width={40}
@@ -88,7 +88,7 @@ const SideBar = ({ onClose }) => {
                       <div className="flex flex-col justify-center items-center w-40  border border-col rounded-md gap-2 ">
                         <div className="w-40  h-32 rounded-md ">
                           <Image
-                            src="/pd12h.webp"
+                            src="/assets/pd12h.webp"
                             alt="recommended product"
                             className="w-full h-full object-cover rounded-md"
                             width={40}
@@ -106,7 +106,7 @@ const SideBar = ({ onClose }) => {
                       <div className="flex flex-col justify-center items-center w-40  border border-col rounded-md gap-2 ">
                         <div className="w-40  h-32 rounded-md ">
                           <Image
-                            src="/pd8s-3.webp"
+                            src="/assets/pd8s-3.webp"
                             alt="recommended product"
                             className="w-full h-full object-cover rounded-md"
                             width={40}
@@ -202,7 +202,7 @@ const SideBar = ({ onClose }) => {
                 <div className="border border-col w-35 h-35 flex flex-col justify-center items-center rounded-md">
                   <div className="w-25 h-25">
                     <Image
-                      src="/free2.avif"
+                      src="/assets/free2.avif"
                       alt="free1"
                       className="w-full h-full object-cover"
                       width={40}
@@ -217,7 +217,7 @@ const SideBar = ({ onClose }) => {
                 <div className="border border-col w-35 h-35 flex flex-col justify-center items-center rounded-md">
                   <div className="w-25 h-25">
                     <Image
-                      src="/free3.avif"
+                      src="/assets/free3.avif"
                       alt="free1"
                       className="w-full h-full object-cover"
                       width={40}
@@ -229,7 +229,7 @@ const SideBar = ({ onClose }) => {
                 <div className="border border-col w-35 h-35 flex flex-col justify-center items-center rounded-md">
                   <div className="w-25 h-25">
                     <Image
-                      src="/free4.avif"
+                      src="/assets/free4.avif"
                       alt="free1"
                       className="w-full h-full object-cover"
                       width={40}

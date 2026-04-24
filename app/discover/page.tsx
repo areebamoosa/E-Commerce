@@ -16,7 +16,7 @@ export const Discover = () => {
 
       <div className="relative w-full h-[250px] mt-[80px] sm:mt-[100px] sm:h-[500px] overflow-hidden">
         <Image
-          src="/Discover.jpeg"
+          src="/assets/Discover.jpeg"
           alt="img"
 
           priority

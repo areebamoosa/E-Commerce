@@ -12,7 +12,7 @@ export const Bag = () => {
         >
           <div className="relative  w-full h-[400px] sm:w-[600px] sm:h-[600px] lg:w-[800px] lg:h-[1000px] overflow-hidden rounded-l-lg">
             <Image
-              src="/Bag2.jpeg"
+              src="/assets/Bag2.jpeg"
               alt="prod"
               fill
               priority
@@ -20,7 +20,7 @@ export const Bag = () => {
             />
 
             <Image
-              src="/Bag1.jpeg"
+              src="/assets/Bag1.jpeg"
               alt="hovImg"
               fill
               

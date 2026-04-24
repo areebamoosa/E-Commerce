@@ -115,8 +115,8 @@ const ProductDetail = ({ product }) => {
             <h1 className="dark-pink font-medium text-xl">ingredients</h1>
 
             <div className="flex justify-center items-center gap-5 mt-5">
-              <Image src="/vegan.webp" alt="vegan" width={40} height={40} />
-              <Image src="/cruelty.webp" alt="cruelty" width={40} height={40} />
+              <Image src="/assets/vegan.webp" alt="vegan" width={40} height={40} />
+              <Image src="/assets/cruelty.webp" alt="cruelty" width={40} height={40} />
             </div>
           </div>
         </div>

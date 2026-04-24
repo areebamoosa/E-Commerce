@@ -8,6 +8,11 @@ const Feat = () => {
   const featured = [skin[0], skin[1], skin[2], skin[3]];
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const handleScroll = (e) => {
+    const { scrollLeft, clientWidth } = e.currentTarget;
+    const nextIndex = Math.round(scrollLeft / clientWidth);
+    setActiveIndex(Math.max(0, Math.min(nextIndex, featured.length - 1)));
+  };
 
   return (
     <>
@@ -18,12 +23,15 @@ const Feat = () => {
           </h1>
         </div>
 
-        <div className="flex flex-col justify-center items-center mt-8">
-          <div className="flex gap-3 px-1">
+        <div className="mt-8">
+          <div
+            className="flex gap-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide px-1 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 sm:overflow-visible"
+            onScroll={handleScroll}
+          >
             {featured.map((prod) => (
               <div
                 key={prod.id}
-                className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 snap-start"
+                className="flex-shrink-0 w-full snap-center flex justify-center sm:w-auto"
               >
                 <ProductCard {...prod} />
               </div>

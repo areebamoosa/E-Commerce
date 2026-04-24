@@ -20,7 +20,7 @@ export default async function Page() {
 
             <div className='relative w-full h-[250px] sm:h-[550px] overflow-hidden'>
 
-                <Image src="/skin.png"
+                <Image src="/assets/skin.png"
                     alt="img"
                     className='w-full h-full object-cover object-right' priority width={400} height={500} />
 
@@ -34,19 +34,19 @@ export default async function Page() {
 
             <div className='flex sm:gap-5 gap-5 justify-start items-start m-8 mt-10 sm:m-10 lg:ml-15'>
                 <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
-                    <Image src="/pd9.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
+                    <Image src="/assets/pd9.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base whitespace-nowrap'>skin concerns</p>
                 </div>
                 <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
-                    <Image src="/pd9h.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
+                    <Image src="/assets/pd9h.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>face</p>
                 </div>
                 <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
-                    <Image src="/pd11h.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
+                    <Image src="/assets/pd11h.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>body</p>
                 </div>
                 <div className='sm:w-[130px] sm:h-[130px]  w-[60px] h-[60px] rounded-md cursor-pointer flex justify-center items-center flex-col'>
-                    <Image src="/pd12h.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
+                    <Image src="/assets/pd12h.webp" alt="eyes" className='w-full h-full object-cover rounded-md' width={40} height={40} />
                     <p className='Font dark-pink font-semibold mt-2 text-xs sm:text-base'>lips</p>
                 </div>
             </div>

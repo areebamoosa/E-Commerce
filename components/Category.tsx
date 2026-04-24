@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const Category = () => {
   const categories = [
-    { img: "/pd5s-4.webp", label: "LIPS" },
-    { img: "/pd16.webp", label: "FRAGRANCE" },
-    { img: "/pd4.webp", label: "EYES" },
-    { img: "/pd9h.webp", label: "SKIN" },
+    { img: "/assets/pd5s-4.webp", label: "LIPS" },
+    { img: "/assets/pd16.webp", label: "FRAGRANCE" },
+    { img: "/assets/pd4.webp", label: "EYES" },
+    { img: "/assets/pd9h.webp", label: "SKIN" },
   ];
 
   const [visibleCount, setVisibleCount] = useState(3);

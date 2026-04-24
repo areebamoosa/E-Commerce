@@ -6,25 +6,37 @@ import Button from "../ui/Button";
 export const Cosmic = () => {
   return (
     <>
-      <div className=" relative  ">
+      <div className="relative mt-10">
         {/* Desktop Image */}
-        <div className="hidden sm:flex justify-center items-center w-full h-[500px] object-cover">
-          <Image src="/frag.webp" alt="balm" fill className="object-cover" priority />
+        <div className="hidden sm:flex justify-center items-center w-full h-full">
+          <Image
+            src="/assets/frag.webp"
+            alt="balm"
+            width={1920}
+            height={1080}
+            className="w-full h-full object-contain"
+            priority
+          />
         </div>
 
         {/* Mobile Image */}
-        <div className="flex justify-center items-center w-full h-[500px] sm:hidden">
-          <div className="w-full max-w-[500px] aspect-square overflow-hidden object-cover">
-            <Image src="/frag.webp" alt="balm" fill className="object-cover" />
+        <div className="flex justify-center items-center w-full sm:hidden">
+          <div className="relative w-full max-w-[500px] aspect-square overflow-hidden">
+            <Image
+              src="/assets/frag.webp"
+              alt="balm"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
 
-        <div className="mt-6 sm:mt-0 sm:absolute sm:bottom-1/14   sm:left-7.5 lg:bottom-1/3     lg:left-17.5 flex justify-center items-center sm:items-start  flex-col">
+        <div className="mt-6 sm:mt-0 sm:absolute sm:bottom-1/14 sm:left-[30px] lg:bottom-1/3 lg:left-[70px] flex justify-center items-center sm:items-start flex-col">
           <div>
-            <h1 className="dark-pink text-lg sm:text-white! font font-semibold sm:text-sm lg:text-2xl">
+            <h1 className="dark-pink text-lg sm:!text-white font font-semibold sm:text-sm lg:text-2xl">
               COSMIC 2.0 WINTER
             </h1>
-            <h1 className="dark-pink text-lg sm:text-white! font font-semibold mt-3 sm:mt-1 lg:mt-3 sm:text-sm lg:text-2xl">
+            <h1 className="dark-pink text-lg sm:!text-white font font-semibold mt-3 sm:mt-1 lg:mt-3 sm:text-sm lg:text-2xl">
               MAKEUP COLLECTION
             </h1>
           </div>

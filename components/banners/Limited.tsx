@@ -8,7 +8,7 @@ const Limited = () => {
       <div className="relative">
         <div className="hidden sm:block w-full h-[500px] object-cover">
           <Image
-            src="/virtualtry.webp"
+            src="/assets/virtualtry.webp"
             alt="lip"
             fill
             className="w-full h-full object-cover"
@@ -18,7 +18,7 @@ const Limited = () => {
         <div className="flex justify-center items-center w-full sm:hidden">
           <div className="w-full max-w-[500px] h-[500px] aspect-square overflow-hidden">
             <Image
-              src="/virtualtry.webp"
+              src="/assets/virtualtry.webp"
               alt="lip"
               fill
               className="w-full h-full object-cover object-[1%]"
