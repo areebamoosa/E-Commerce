@@ -18,7 +18,7 @@ export const HeroImage = () => {
           priority
         />
 
-        <div className="red  bottom-[-220px] sm:!text-white md:!text-white lg:!text-white absolute mt-4 sm:mt-0 translate-x-1/8 sm:bottom-[50px] sm:translate-x-1/5 lg:bottom-[150px] lg:left-[23%] lg:-translate-x-1/5">
+        <div className="red  bottom-[-220px] sm:!text-white md:!text-white lg:!text-white absolute mt-4 sm:mt-0 translate-x-1/5 sm:bottom-[50px] sm:translate-x-1/5 lg:bottom-[150px] lg:left-[23%] lg:-translate-x-1/5">
 
 
           <div className="flex items-center justify-center gap-4 mb-6">

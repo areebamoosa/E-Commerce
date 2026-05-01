@@ -3,7 +3,7 @@ import ProductGrid from "../../../components/product/ProductGrid"
 import { fragranceProducts } from "../../../data/products/fragrance"
 import Footer from "../../../components/layout/Footer"
 import NavSwitcher from '../../../components/layout/Navbar/NavSwitcher'
-import { resolve } from 'path'
+
 
 export default async function Page() {
 

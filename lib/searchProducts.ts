@@ -1,6 +1,6 @@
 import { allProducts } from "@/data/products";
 
-export const searchProducts = (query) => {
+export const searchProducts = (query: string) => {
   const Q = query.toLowerCase().trim();
 
   if (!Q) return [];

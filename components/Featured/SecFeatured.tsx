@@ -8,7 +8,7 @@ const SecFeat = () => {
   const secFeatured = [cosmetics[0], cosmetics[1], cosmetics[2], cosmetics[3]];
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const handleScroll = (e) => {
+  const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
     const { scrollLeft, clientWidth } = e.currentTarget;
     const nextIndex = Math.round(scrollLeft / clientWidth);
     setActiveIndex(Math.max(0, Math.min(nextIndex, secFeatured.length - 1)));

@@ -23,7 +23,8 @@ const Nav = () => {
   const { searchItem, setSearchItem } = useSearch();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement | null> (null);
+
 
   useEffect(() => {
     if (open && inputRef.current) {
@@ -40,7 +41,7 @@ const Nav = () => {
             <i className="fa-solid fa-dollar-sign"></i>
           </div>
 
-          <button onClick={() => setSidebar(true)} className="ml-2 sm:hidden">
+          <button onClick={() => setIsSidebarOpen(true)} className="ml-2 sm:hidden">
             <i className="fa-solid fa-bars text-black"></i>
           </button>
 

@@ -23,7 +23,8 @@ export const MainNavbar = () => {
   const { searchItem, setSearchItem } = useSearch();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement | null> (null);
+
 
   useEffect(() => {
     if (open && inputRef.current) {

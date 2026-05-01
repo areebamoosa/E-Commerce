@@ -2,8 +2,14 @@
 
 import { useToast } from "@/hooks/useToast";
 
+interface ToastItem {
+  id: number;
+  message: string;
+  type: "success" | "error";
+}
+
 const Toast = () => {
-  const { toasts = [] } = useToast();
+  const { toasts = [] } = useToast() as { toasts: ToastItem[] };
 
   return (
     <div className="fixed top-18 left-1/2 -translate-x-1/2 flex flex-col gap-3 z-50">

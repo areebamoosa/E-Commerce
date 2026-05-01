@@ -8,7 +8,7 @@ const Feat = () => {
   const featured = [skin[0], skin[1], skin[2], skin[3]];
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const handleScroll = (e) => {
+  const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
     const { scrollLeft, clientWidth } = e.currentTarget;
     const nextIndex = Math.round(scrollLeft / clientWidth);
     setActiveIndex(Math.max(0, Math.min(nextIndex, featured.length - 1)));

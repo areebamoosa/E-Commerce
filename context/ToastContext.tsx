@@ -2,12 +2,25 @@
 
 import { createContext, useState } from "react";
 
-export const ToastContext = createContext();
+type ToastType = {
+  id: number;
+  message: string;
+  type: "success" | "error";
+};
 
-export const ToastProvider = ({ children }) => {
-  const [toasts, setToasts] = useState([]);
+type ToastContextType = {
+  toasts: ToastType[];
+  addToast: (message: string, type?: "success" | "error") => void;
+};
 
-  const addToast = (message, type = "success") => {
+export const ToastContext = createContext<ToastContextType | undefined>(
+  undefined
+);
+
+export const ToastProvider = ({ children }: { children: React.ReactNode }) => {
+  const [toasts, setToasts] = useState<ToastType[]>([]);
+
+  const addToast = (message: string, type: "success" | "error" = "success") => {
     const id = Date.now();
 
     setToasts((prev) => [...prev, { id, message, type }]);

@@ -2,9 +2,14 @@
 
 import { createContext, useContext, useState } from "react";
 
-const SearchContext = createContext();
+type SearchContextType = {
+  searchItem: string;
+  setSearchItem: (value: string) => void;
+};
 
-export const SearchProvider = ({ children }) => {
+const SearchContext = createContext<SearchContextType | undefined>(undefined);
+
+export const SearchProvider = ({ children }: { children: React.ReactNode }) => {
   const [searchItem, setSearchItem] = useState("");
 
   return (

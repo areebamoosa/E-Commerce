@@ -1,6 +1,5 @@
 export const skinProducts = [
   {
-    // id: 13,
     id: 19,
     title: "Her's Skin Serum",
     price: 36,
@@ -11,7 +10,6 @@ export const skinProducts = [
     category: "skin",
   },
   {
-    // id: 14,
     id: 20,
     title: "Her's Skin Serum",
     price: 56,

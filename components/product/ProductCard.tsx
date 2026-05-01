@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 
+import type { ProductProps } from "@/types";
+
 const ProductCard = ({
   id,
   title,
@@ -14,7 +16,7 @@ const ProductCard = ({
   hoverImg,
   smallImgs,
   category,
-}) => {
+}: ProductProps) => {
   const [mainImg, setImg] = useState(Img);
   const activeHoverImg = mainImg === Img ? hoverImg : mainImg;
 
@@ -26,7 +28,10 @@ const ProductCard = ({
   };
 
   // Stopig navigation when clicking small images
-  const handleSmallImgClick = (e, img) => {
+  const handleSmallImgClick = (
+    e: React.MouseEvent<HTMLImageElement>,
+    img: string
+  ) => {
     e.stopPropagation();
     setImg(img);
   };
@@ -39,10 +44,7 @@ const ProductCard = ({
         className="cursor-pointer relative lg:h-[460px] lg:w-[350px] sm:h-[350px] sm:w-[220px] h-[340px] w-[180px]  bg-white rounded-lg transition-all duration-500 shadow-md "
         onClick={handleCardClick}
       >
-        <div
-
-          className="relative lg:h-[340px] lg:w-[350px] h-[220px] w-full rounded-t-lg group/image"
-        >
+        <div className="relative lg:h-[340px] lg:w-[350px] h-[220px] w-full rounded-t-lg group/image">
           {/* Original Default Image */}
           <Image
             key={mainImg}

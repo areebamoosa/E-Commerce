@@ -9,11 +9,18 @@ import Image from "next/image";
 
 import Footer from "@/components/layout/Footer";
 import TransButton from "@/components/ui/TransButton";
-import Review from "@/components/Review";
+
+import Review from "../Review";
+
+import type { ProductProps } from "@/types";
+
+interface ProductDetailProps {
+  product: ProductProps;
+}
 
 import { useToast } from "@/hooks/useToast";
 
-const ProductDetail = ({ product }) => {
+const ProductDetail = ({ product }: ProductDetailProps) => {
   const { addToCart } = useCart();
   const { addToast } = useToast();
 
@@ -115,8 +122,18 @@ const ProductDetail = ({ product }) => {
             <h1 className="dark-pink font-medium text-xl">ingredients</h1>
 
             <div className="flex justify-center items-center gap-5 mt-5">
-              <Image src="/assets/vegan.webp" alt="vegan" width={40} height={40} />
-              <Image src="/assets/cruelty.webp" alt="cruelty" width={40} height={40} />
+              <Image
+                src="/assets/vegan.webp"
+                alt="vegan"
+                width={40}
+                height={40}
+              />
+              <Image
+                src="/assets/cruelty.webp"
+                alt="cruelty"
+                width={40}
+                height={40}
+              />
             </div>
           </div>
         </div>

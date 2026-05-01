@@ -2,8 +2,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import { useSearch } from "@/context/SearchContext";
-
-
 import NavSidebar from "./NavSidebar";
 import Nav from "./Nav";
 
@@ -23,7 +21,7 @@ const AccountNav = () => {
   const { searchItem, setSearchItem } = useSearch();
   const [sidebar, setSidebar] = useState(false);
 
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement | null> (null);
 
   useEffect(() => {
     if (open && inputRef.current) {

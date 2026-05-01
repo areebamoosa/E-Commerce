@@ -6,7 +6,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useToast } from "@/hooks/useToast";
 
-const SideBar = ({ onClose }) => {
+type CartSidebar = {
+  onClose: () => void;
+};
+
+const SideBar = ({ onClose }: CartSidebar) => {
   const { cart, removeFromCart, addToCart, decreaseQuantity } = useCart();
 
   const { addToast } = useToast();
