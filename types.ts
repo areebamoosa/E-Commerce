@@ -3,8 +3,8 @@ export interface ProductProps {
   title: string;
   price: number;
   desc?: string;
-  Img?: string;
-  hoverImg?: string;
+  Img: string;
+  hoverImg: string;
   smallImgs: string[];
   category: string;
 }
