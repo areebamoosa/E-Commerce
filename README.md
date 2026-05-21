@@ -6,37 +6,35 @@ An e-commerce store showcasing real-world online shopping features.
 
 ## About the project 🚀
 
-**HER Cosmetics** is a frontend e-commerce website originally built using **React and Tailwind CSS**, and later **fully migrated into a scalable Next.js + TypeScript architecture**.
+**HER Cosmetics** is a frontend e-commerce website originally built using **React and Tailwind CSS**, and later fully migrated into a scalable **Next.js + TypeScript** architecture.
 
-This project started as a UI-heavy React application, but was then restructured to simulate a real-world production frontend system — focusing on **scalability, maintainability, and modern Next.js engineering practices**.
+This project started as a UI-heavy React application and was later restructured to feel more like a real-world frontend project, with a focus on scalability, maintainability, and modern Next.js practices.
 
-The goal was not just to build features, but to **refactor and evolve a messy component-based project into a clean, structured, and scalable codebase** similar to how real frontend teams work in production.
+The goal was not just to build features, but to refactor and evolve a messy component-based project into a clean, structured, and scalable codebase similar to how real frontend teams work in production.
 
 ## ⚙️ Architecture Upgrade (React → Next.js)
 
 This project went through a full architectural upgrade:
 
-- ➤ Migrated from React SPA → **Next.js App Router architecture**
-- ➤ Refactored entire codebase into **feature-based folder structure**
-- ➤ Split **client and server components** for performance and scalability
-- ➤ Separated logic into reusable components, custom hooks, and context providers
-- ➤ Added **TypeScript across the entire project** for type safety and reliability
-- ➤ Added skeleton loading UI for product pages and cards to improve perceived performance
-- ➤ Implemented debounced search input to reduce unnecessary re-renders and improve efficiency
-- ➤ Used dynamic imports for code splitting (cart, product pages, heavy components)
-- ➤ Optimized images using Next.js Image component for lazy loading and responsiveness
-- ➤ Built toast notification system for add/remove cart actions
-- ➤ Improved product filtering and search rendering logic
+- ➤ Migrated to Next.js App Router
+- ➤ Reorganized the codebase into a feature-based folder structure
+- ➤ Introduced separation of **client** and **server** components
+- ➤ Broke logic into reusable components, hooks, and context providers
+- ➤ Added TypeScript for type safety across the project
+- ➤ Added skeleton loading UI to improve perceived performance
+- ➤ Added debounced search to reduce unnecessary re-renders
+- ➤ Used dynamic imports for code splitting (cart, product pages, heavy UI)
+- ➤ Optimized images using Next.js Image (lazy loading + responsiveness)
+- ➤ Built a toast system for cart actions
+- ➤ Improved filtering and search behavior for smoother UX
 
 ### Previous Version (v1)
 
 <details>
-<summary>Click to view v1 (React + Tailwind CSS version)</summary>
+<summary>Click to view previous version (React + Tailwind CSS version)</summary>
 <br>
 
-The original version of **HER Cosmetics** was built using React and Tailwind CSS with a basic frontend structure. The codebase was loosely organized, with repeated patterns across components and no proper structure or consistency. It was also not type-safe as TypeScript was not used.
-
-This version primarily focused on UI implementation rather than scalable architecture or production-level structure.
+The original version of **HER Cosmetics** was a simple React + Tailwind CSS build focused mainly on UI, with a loosely structured, non-scalable codebase and no TypeScript.
 
 #### 🔗 [View V1 Repository](https://github.com/areebamoosa/HER-Cosmetics)
 
